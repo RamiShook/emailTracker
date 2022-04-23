@@ -9,7 +9,7 @@ exports.createTracker = async (req, res) => {
     )}/emailTrack/${_id}.png' style = 'display:none'>`;
     return res.status(201).json({
       _id,
-      message: `Created Use this tag with your email ${emailBody}`,
+      message: `Created Use this tag with your email body ${emailBody}`,
     });
   } catch (error) {
     throw Error(error);
